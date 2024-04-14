@@ -4,4 +4,6 @@ class Employee {
   String? firstName;
   String? lastName;
   String? avatar;
+
+  Employee({this.id, this.email, this.firstName, this.lastName, this.avatar});
 }
