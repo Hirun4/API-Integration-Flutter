@@ -6,4 +6,18 @@ class Employee {
   String? avatar;
 
   Employee({this.id, this.email, this.firstName, this.lastName, this.avatar});
+
+  Employee.fromJson(Map<String, dynamic> json) {
+    this.id = json['id'];
+  }
 }
+
+
+
+//  {
+//       "id": 7,
+//       "email": "michael.lawson@reqres.in",
+//       "first_name": "Michael",
+//       "last_name": "Lawson",
+//       "avatar": "https://reqres.in/img/faces/7-image.jpg"
+//     },
