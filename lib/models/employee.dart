@@ -8,7 +8,11 @@ class Employee {
   Employee({this.id, this.email, this.firstName, this.lastName, this.avatar});
 
   Employee.fromJson(Map<String, dynamic> json) {
-    this.id = json['id'];
+    id = json['id'];
+    email = json['email'];
+    firstName = json['first_name'];
+    lastName = json['last_name'];
+    avatar = json['avatar'];
   }
 }
 
