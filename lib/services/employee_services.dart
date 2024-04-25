@@ -5,6 +5,8 @@ class EmployeeServices {
 
   getAllEmployeeData() async {
     var response = await http.get(Uri.parse(baseUrl + "users?page=2"));
-    if (response.statusCode == 200) {}
+    if (response.statusCode == 200) {
+      var data = response.body;
+    }
   }
 }
