@@ -8,6 +8,7 @@ class EmployeeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Employee Data"),
+        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.refresh))],
       ),
     );
   }
