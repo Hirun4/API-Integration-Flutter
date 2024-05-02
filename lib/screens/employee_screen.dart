@@ -1,3 +1,4 @@
+import 'package:api_integration_flutter/services/employee_services.dart';
 import 'package:flutter/material.dart';
 
 class EmployeeScreen extends StatelessWidget {
@@ -8,7 +9,9 @@ class EmployeeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Employee Data"),
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.refresh))],
+        actions: [IconButton(onPressed: () {
+          EmployeeServices().getAllEmployeeData()
+        }, icon: Icon(Icons.refresh))],
       ),
     );
   }
