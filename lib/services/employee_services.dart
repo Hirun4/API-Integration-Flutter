@@ -11,6 +11,7 @@ class EmployeeServices {
       if (response.statusCode == 200) {
         var data = response.body;
         var decodedData = jsonDecode(data);
+        var employees = decodedData['data'];
 
         print(data);
       }
