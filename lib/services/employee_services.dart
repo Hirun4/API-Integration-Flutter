@@ -13,7 +13,7 @@ class EmployeeServices {
         var decodedData = jsonDecode(data);
         var employees = decodedData['data'];
 
-        print(data);
+        print(employees);
       }
     } catch (e) {
       throw Exception(e.toString());
