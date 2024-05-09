@@ -14,6 +14,8 @@ class EmployeeServices {
         var employees = decodedData['data'];
 
         print(employees);
+
+        for (var employee in employees) {}
       }
     } catch (e) {
       throw Exception(e.toString());
