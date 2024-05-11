@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:api_integration_flutter/models/employee.dart';
 import 'package:http/http.dart' as http;
 
 class EmployeeServices {
@@ -15,7 +16,9 @@ class EmployeeServices {
 
         print(employees);
 
-        for (var employee in employees) {}
+        for (var employee in employees) {
+          Employee newEmployee = Employee.fromJson(employee);
+        }
       }
     } catch (e) {
       throw Exception(e.toString());
