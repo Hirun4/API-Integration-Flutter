@@ -19,6 +19,7 @@ class EmployeeServices {
 
         for (var employee in employees) {
           Employee newEmployee = Employee.fromJson(employee);
+          allEmployees.add(newEmployee);
         }
       }
     } catch (e) {
