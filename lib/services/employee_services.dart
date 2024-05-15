@@ -21,6 +21,7 @@ class EmployeeServices {
           Employee newEmployee = Employee.fromJson(employee);
           allEmployees.add(newEmployee);
         }
+        return allEmployees;
       }
     } catch (e) {
       throw Exception(e.toString());
