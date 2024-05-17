@@ -15,7 +15,7 @@ class EmployeeServices {
         var decodedData = jsonDecode(data);
         var employees = decodedData['data'];
 
-        print(employees);
+        // print(employees);
 
         for (var employee in employees) {
           Employee newEmployee = Employee.fromJson(employee);

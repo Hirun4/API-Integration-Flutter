@@ -12,7 +12,7 @@ class EmployeeScreen extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: () {
-                EmployeeServices().getAllEmployeeData();
+                print(EmployeeServices().getAllEmployeeData());
               },
               icon: Icon(Icons.refresh))
         ],
