@@ -18,7 +18,8 @@ class EmployeeScreen extends StatelessWidget {
         ],
       ),
       body: FutureBuilder(
-          future: EmployeeServices().getAllEmployeeData(), builder: builder),
+          future: EmployeeServices().getAllEmployeeData(),
+          builder: (context, snapshot) {}),
     );
   }
 }
