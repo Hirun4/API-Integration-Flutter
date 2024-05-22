@@ -19,7 +19,13 @@ class EmployeeScreen extends StatelessWidget {
       ),
       body: FutureBuilder(
           future: EmployeeServices().getAllEmployeeData(),
-          builder: (context, snapshot) {}),
+          builder: (context, snapshot) {
+            if (snapshot.hasError) {
+              return Center(
+                child: Text("Error fetching employee data"),
+              );
+            }
+          }),
     );
   }
 }
