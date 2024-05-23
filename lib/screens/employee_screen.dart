@@ -25,6 +25,10 @@ class EmployeeScreen extends StatelessWidget {
                 child: Text("Error fetching employee data"),
               );
             }
+
+            if (snapshot.hasData) {
+              return ListView.builder(itemBuilder: itemBuilder)
+            }
           }),
     );
   }
