@@ -27,7 +27,7 @@ class EmployeeScreen extends StatelessWidget {
             }
 
             if (snapshot.hasData) {
-              return ListView.builder(itemBuilder: itemBuilder)
+              return ListView.builder(itemBuilder: )
             }
           }),
     );
