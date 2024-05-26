@@ -1,3 +1,4 @@
+import 'package:api_integration_flutter/models/employee.dart';
 import 'package:api_integration_flutter/services/employee_services.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,11 @@ class EmployeeScreen extends StatelessWidget {
             }
 
             if (snapshot.hasData) {
-              return ListView.builder(itemBuilder: )
+
+              var data = snapshot.data as List<Employee>;
+              return ListView.builder(
+                itemCount: ,
+                itemBuilder: (){})
             }
           }),
     );
