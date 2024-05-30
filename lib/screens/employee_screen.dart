@@ -32,7 +32,7 @@ class EmployeeScreen extends StatelessWidget {
               var data = snapshot.data as List<Employee>;
               return ListView.builder(
                 itemCount: data.length,
-                itemBuilder: (){})
+                itemBuilder: (context,index){})
             }
           }),
     );
