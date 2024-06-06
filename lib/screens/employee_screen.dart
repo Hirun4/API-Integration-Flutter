@@ -34,7 +34,7 @@ class EmployeeScreen extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return ListTile(
                       leading: CircleAvatar(
-                        backgroundImage: NetworkImage(data[index].avatar),
+                        backgroundImage: NetworkImage(data[index].avatar!),
                       ),
                       title: Text(""),
                     );
