@@ -36,7 +36,8 @@ class EmployeeScreen extends StatelessWidget {
                       leading: CircleAvatar(
                         backgroundImage: NetworkImage(data[index].avatar!),
                       ),
-                      title: Text("${data[index]}"),
+                      title: Text(
+                          "${data[index].firstName} ${data[index].lastName}"),
                     );
                   });
             }
