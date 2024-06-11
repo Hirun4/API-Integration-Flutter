@@ -38,7 +38,7 @@ class EmployeeScreen extends StatelessWidget {
                       ),
                       title: Text(
                           "${data[index].firstName} ${data[index].lastName}"),
-                          subtitle: ,
+                      subtitle: Text(data),
                     );
                   });
             }
