@@ -41,7 +41,7 @@ class EmployeeScreen extends StatelessWidget {
                       subtitle: Text(data[index].email!),
                     );
                   });
-            }
+            } else {}
           }),
     );
   }
