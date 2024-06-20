@@ -41,7 +41,11 @@ class EmployeeScreen extends StatelessWidget {
                       subtitle: Text(data[index].email!),
                     );
                   });
-            } else {}
+            } else {
+              return Center(
+                child: CircularProgressIndicator(),
+              )
+            }
           }),
     );
   }
