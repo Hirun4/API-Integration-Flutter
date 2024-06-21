@@ -44,7 +44,7 @@ class EmployeeScreen extends StatelessWidget {
             } else {
               return Center(
                 child: CircularProgressIndicator(),
-              )
+              );
             }
           }),
     );
